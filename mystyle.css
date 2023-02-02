@@ -1,0 +1,915 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*This is for the whole document*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+@font-face{font-family:'Helvetica';
+ src: url('fonts/Helvetica.ttf');
+	font-weight:normal;}
+
+@font-face{font-family:'Marydale Black';
+src: url('fonts/marydbol.ttf');
+    font-weight:bold;}
+
+@font-face {font-family:'Bebas Neue Regular';
+	src: url('fonts/bebas_neue/BebasNeueRegular.otf');
+	font-weight:normal;
+    
+
+}
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing:border-box;
+}
+html body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+	#wrapper{
+	width:1024px;
+	margin:20px auto;
+	}
+
+/*This is for the header and navigation bar*/
+
+@keyframes titlescroll{
+	0% {left: -20px; letter-spacing:.5em;}
+	100% {left: auto; letter-spacing:inherit;}
+}
+
+@keyframes designscroll{
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	75% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+	header {
+		font-family: bebas_neueregular, serif;
+		width:100%;
+		height: 125px;
+		padding-top: 25px;
+		padding-left:63px;
+		
+		}
+
+nav{
+	width:100%;
+	height:56px;
+	}	
+
+nav ul {
+   
+    list-style: none;
+    width: 100%;
+	margin-top: -50px;
+	
+}
+
+nav li {
+    float: left;
+    position: relative;
+    min-width: 20%;
+    
+}
+
+nav ul li a{
+	display:block;
+	font-family: 'bebas_neueregular', serif;
+	letter-spacing: 1px;
+	background: black;
+	color: white;
+	padding: 18px;
+	text-align: center;
+	text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+	}
+	
+	nav a:hover{
+		color:#02c694;
+	}
+
+nav li ul {
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .20s ease;
+       -moz-transition: all .20s ease;
+        -ms-transition: all .20s ease;
+         -o-transition: all .20s ease;
+            transition: all .20s ease;
+}
+
+nav li:hover ul {
+    opacity: 1;
+    top: 100px;
+    visibility: visible;
+}
+
+nav li ul li {
+    width: 100%;
+}
+
+a.one{font-size: 34px;
+		color: black;
+		text-decoration:none;
+		animation-name: titlescroll;
+		animation-duration: 4s;
+		}
+
+a.one:hover{
+	color:#02c694;
+}
+	
+.two{
+	margin-left: 326px;
+		display: inline-block;
+		color: #02c694;
+		font-size: 34px;
+		animation-name: designscroll;
+		animation-duration: 5s;
+		}
+
+.three{ 
+        color:black;
+        font-family: 'bebas_neueregular', serif;
+        font-size: 84px;}
+
+.five{margin-top:100px;
+    text-align:center;
+        }
+
+.six{color:black;
+        font-family: 'bebas_neueregular', serif;
+        font-size: 16em;}
+
+.seven{
+    text-align:center;
+    margin-bottom:-50px;
+        }
+
+.eight{
+    margin-top:150px;
+    text-align:center;
+    margin-bottom:-50px;
+        }
+
+.nine{margin-top:620px;
+    text-align:center;}
+
+.ten{margin-top:475px;
+    text-align:center;}
+	
+	
+	@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}	
+
+
+/*This is for the main page section on every page*/
+
+		main {
+		width: 100%;
+		}
+
+		.title{font-family: bebas_neueregular, serif;
+			font-size: 28px;
+			margin-left: 410px;	
+			
+		}
+
+h1 {font-weight:regular;
+    font-size: 2em;}
+
+/*This is specifically for the homepage, main page section*/
+
+		img {margin-top: 10px;
+		}
+	
+		.aboutme {font-family: bebas_neueregular, serif;
+			font-size: 28px;
+			margin-top: 50px;
+			text-align:center;		
+		}
+	
+		.about {
+			font-family: 'Helvetica', sans-serif;
+			font-size: 18px;
+			line-height: 1.5;
+		margin-top: 10px;
+	
+		}
+
+		.aboutportfolio {
+		
+		margin-top: 10px;
+		margin-left: 315px;
+		margin-right: 300px;
+}
+	
+		.mywork {font-family: bebas_neueregular, serif;
+			font-size: 28px;
+			margin-top: 15px;
+			text-align:center;
+			}
+
+.thumb-unit {width:30%}
+															
+	
+		.thumbs {
+		vertical-align: top;
+		display: inline-block;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-top: 20px;
+		}
+
+		.thumbs img {
+		vertical-align: top;
+		display: inline-block;
+		margin-left: 60px;
+		margin-top: 20px;
+		}
+	
+		.logo{
+		display:inline-block;
+		width:150px;
+		}
+
+		.logo:hover{
+		border:2px black;
+		}
+
+		a img#speciallogo1{
+			position:relative;
+			margin-top: 28px;
+			margin-left: 20px;
+		}
+
+		img#speciallogo7{margin-left:160px;}
+
+		 img#speciallogo2{
+			position:relative;
+			margin-top: 20px;
+			margin-left:160px;
+		}
+
+		a img#speciallogo3{
+			position:relative;
+			margin-top: 55px;
+		}
+
+		a img#speciallogo4{
+			position:relative;
+			margin-top: 15px;
+		}
+
+		img#speciallogo5{
+			position:relative;
+			margin-top: 30px;
+			margin-left:150px;
+		}
+
+		 img#speciallogo6{
+			position:relative;
+			margin-top: 20px;
+			margin-left:165px;
+		}
+
+			img#speciallogo8{
+			position:relative;
+			margin-top: 30px;
+		}
+
+			.thumb-about {-webkit-column-count: 3; /* Chrome, Safari, Opera */
+			  -moz-column-count: 3; /* Firefox */
+			  column-count: 3;
+				column-gap:40px;
+				font-family:'Helvetica', sans-serif;
+				line-height:1.25;}
+
+/*This is for the graphic designs page*/
+
+		#graphicthumbs{margin-left: 20px;}
+
+		#graphicthumbs a {
+		vertical-align: top;
+		display: inline-block;
+		margin-left: 40px;
+		margin-top: 20px;
+		}
+
+		img.graphicthumbindividualleft{
+			width:150px;
+			margin-left: 35px;
+			box-shadow: 0px 0px 3px #233e99;
+			-moz-box-shadow: 0px 0px 3px #233e99;
+			-webkit-box-shadow:0px 0px 3px #233e99;
+			
+			}
+
+		img.graphicthumbindividualright{
+				position: relative;
+			margin-right: 55px;
+			box-shadow: 0px 0px 3px #233e99;
+			-moz-box-shadow: 0px 0px 3px #233e99;
+			-webkit-box-shadow:0px 0px 3px #233e99;
+			
+			}
+
+/*This is for the portfolio page*/
+
+		.portfoliobanner{
+			width:100%;
+			margin-top:50px;
+		}
+
+        
+        .portfolioobject-6{margin-top:30px;
+						width:70%;
+						background: #6E55DC;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+
+        .portfolioobject-5{margin-top:20px;
+						width:70%;
+						background: #e20514;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+        .portfolioobject-4{margin-top:20px;
+                        margin-bottom:150px;
+						width:70%;
+						background: #00cbc8;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+        .portfolioobject-3{margin-top:30px;
+						width:70%;
+						background: #512ea8;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject-2{margin-top:20px;
+						width:70%;
+						background: #f5af18;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject-1{margin-top:-275px;
+						width:70%;
+						background: #1a525b;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+        .portfolioobject0{margin-top:-285px;
+						width:70%;
+						background: #48956E;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject1{margin-top:-215px;
+						width:70%;
+						background: #5297cb;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject2{margin-top:30px;
+						width:70%;
+						background: #002fa7;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject3{
+						width:70%;
+						background: #5297cb;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject4{margin-top:30px;
+						width:70%;
+						background: #f17b5e;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject5{
+						width:70%;
+						background: #5297cb;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject6{margin-top:-350px;
+						width:70%;
+						background: #002fa7;
+						float:left;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+		.portfolioobject7{margin-top:-25px;
+						width:70%;
+						background: #2c5f81;
+						float:right;
+						padding:20px;
+                        border-radius:5px;
+						}
+
+.portfolioobject-6:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject-5:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject-4:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject-3:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject-2:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject-1:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject0:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject2:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject1:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject3:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject4:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject5:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject6:hover {opacity:0.5; cursor:pointer;}
+.portfolioobject7:hover {opacity:0.5; cursor:pointer;}
+
+#portfoliologo-6{width:15em;
+			padding:20px;
+			margin-top:160px;
+			position: relative;
+			display:inline-block;
+            width: 28%;
+            height: auto;}
+
+#portfoliologo-5{width:15em;
+			padding:20px;
+			float:left;
+            margin-left:-700px;
+			margin-top: 490px;}
+
+#portfoliologo-4{width:15em;
+			padding:20px;
+			margin-top: 510px;
+            margin-right:-700px;
+			position: relative;
+			display:inline-block;
+            width: 28%;
+            height: auto;}
+
+#portfoliologo-3{width:15em;
+			padding:20px;
+			margin-top: 190px;}
+
+#portfoliologo-2{width:15em;
+			padding:20px;
+			padding-top:195px;
+			margin-right:-700px;
+			position: relative;
+			display:inline-block;
+			}
+
+#portfoliologo-1{width:16em;
+			padding:20px;
+			padding-top:200px;
+			position: relative;
+			display:inline-block;
+			margin-left:-700px;
+			margin-top:400px;}
+
+#portfoliologo0{width:18em;
+			padding:20px;
+            margin-left:500px;
+			padding-top:125px;
+			position: relative;
+			display:inline-block;
+		}
+
+#portfoliologo1{width:18em;
+			padding:20px;
+			margin-left: -725px;
+			margin-top: 520px;}
+
+#portfoliologo2{width:15em;
+			padding:20px;
+			padding-top:175px;
+			margin-right:-700px;
+			position: relative;
+			display:inline-block;
+			}
+
+#portfoliologo3{width:16em;
+			padding:20px;
+			position: relative;
+			display:inline-block;
+			}
+
+#portfoliologo4{width:18em;
+			padding:20px;
+			padding-top:35px;
+			position: relative;
+			display:inline-block;
+			}
+
+#portfoliologo5{width:16em;
+			padding:20px;
+			padding-top:100px;
+			position: relative;
+			display:inline-block;
+			}
+
+#portfoliologo6{width:16em;
+			padding:20px;
+			padding-top:60px;
+			position: relative;
+			display:inline-block;
+			margin-left:725px;}
+
+#portfoliologo7{width:16em;
+			padding-left:30px;
+			margin-top:35px;
+			position: relative;
+			display:inline-block;
+			}
+
+.portfoliosubheader{
+			font-family: 'Helvetica', sans-serif;
+			color:#FFFFFF;
+			}
+
+.portfoliodescription{padding:20px;
+				font-family: 'Helvetica', sans-serif;
+				color:#FFFFFF;}
+
+.portfoliobullet{margin-left:20px;
+			font-family: 'Helvetica', sans-serif;}
+
+.imagezoom{margin-top:10px;}
+
+
+
+
+
+/*This is for the publications page*/
+
+		.pubbox{
+		border: 1px solid #A4A4A4;
+		margin-left: 95px;
+		margin-right: 95px;
+		margin-top: 30px;
+		padding: 10px;
+		-moz-box-shadow: 3px 3px 3px #777777;
+		-webkit-box-shadow:3px 3px 3px #777777;
+		box-shadow: 3px 3px 3px #777777;
+		}
+		
+		.pubtitle{
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: bold;
+		margin-left: 265px;
+		}
+
+		#frontispiece1{
+		margin-top: 170px;
+			padding-left:10px;
+		float: left;
+		display:block;
+		}
+
+		#frontispiece2:hover{opacity: 0.7;}
+
+		#frontispiece2{
+		margin-top: 120px;
+		padding-left:10px;
+		float: left;
+		display:block;
+		}
+
+		#frontispiece1:hover{opacity: 0.7;}
+
+		.abstract{
+			font-family: 'Josefin Sans', sans-serif;
+			margin-left:255px;
+			padding-left:10px;
+			padding-right:10px;
+			font-size: 18px;
+		}
+
+/*This is for the photography page*/
+
+.title1{
+	text-align:center;
+	font-family: bebas_neueregular, serif;
+			font-size: 28px;
+}
+
+.title3{
+	text-align:center;
+	font-family: bebas_neueregular, serif;
+			font-size: 56px;
+}
+
+		#photothumbs{
+			margin-left: 25px;
+		}
+
+		#photothumbs a {
+		vertical-align: top;
+		display: inline-block;
+		margin-left: 40px;
+		margin-top: 20px;
+		}
+
+/*This is for the CV page*/
+
+#cvmenu{
+	border:none;
+	text-align: left;
+		margin-left: 365px;
+		margin-right: 380px;
+		padding: 10px;
+		font-size: 18px;
+		}
+
+.cvlinks li a {
+		text-transform:uppercase;
+		font-family: 'Josefin Sans', sans-serif;
+		color:black;
+		text-decoration:none;
+		-webkit-transition: all .25s ease;
+       	-moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+		}
+
+.cvlinks li a:hover{
+		color:red;
+		}
+
+		#cvbox{
+		float:left;
+		border:hidden;
+		margin-left: 95px;
+		margin-right: 95px;
+		padding: 10px;
+		}
+
+		.cvheading {
+		font-family: bebas_neueregular, serif;
+		letter-spacing:1px;
+		float:left;
+		display:block;
+		text-align: right;
+		max-width:20%;
+		border:hidden;
+		padding: 10px;
+		}
+
+		.cvbullets{
+		font-family: 'Josefin Sans', sans-serif;
+		width:600px;
+		margin-top: -9px;
+		font-size:18px;
+		border:hidden;
+		margin-left:200px;
+		}
+
+		#cvbulletspecial{
+		margin-top: 9px;
+		}
+
+		#heading1{
+		position:relative;
+			left:60px;
+		}
+
+		#heading2{
+		position:relative;
+			left:40px;
+		}
+
+		#heading3{
+		position:relative;
+			left:15px;
+		}
+
+		#heading4{
+		position:relative;
+			left:100px;
+		}
+
+		#heading5{
+		position:relative;
+			left:50px;
+		}
+
+		#heading6{
+		position:relative;
+			left:50px;
+		}
+
+		#heading7{
+		position:relative;
+			left:47px;
+		}
+
+/*This is for the CV page*/
+
+.title2{
+	text-align:center;
+	font-family: bebas_neueregular, serif;
+			font-size: 28px;
+}
+
+/*This is for the Contact Me Page*/
+
+#map{
+	margin-top:-20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+	font-family: bebas_neueregular, serif;
+	font-size: 2em;
+	letter-spacing: 1px;
+    width: 100%;
+    background-color: #02c694;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=button] {
+	font-family: bebas_neueregular, serif;
+	font-size: 2em;
+	letter-spacing: 1px;
+    width: 100%;
+    background-color: #02c694;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
+
+div#contactme{
+	margin-left: 250px;
+	width: 50%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 55px;
+}
+	
+	h3#contactmeheader{
+		font-family: bebas_neueregular, serif;
+		padding-left: 180px;
+		letter-spacing: 1px;
+	}
+	
+/*This is CSS for the Contact Me -- social media buttons*/
+
+footer{
+	background-color:#dadada;
+	margin-top: 15px;
+	width: auto;
+	height: 120px;
+	margin-bottom:40px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+	margin-top: 35px;
+    display:block;
+	}
+
+.fa:hover {
+    opacity: 0.7;
+	}
+	
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:377px;
+	}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:10px;
+	}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:10px;
+	}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:10px;
+	}
+
+.fa-dribbble {
+  background: blue;
+  color: white;
+	
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:10px;
+	}
+
+.fa-dribbble {
+  background: blue;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:10px;
+	}
+
+.fa-github {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+	margin-left:10px;
+	}
