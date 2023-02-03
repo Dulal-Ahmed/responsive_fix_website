@@ -740,5 +740,12 @@ footer{
 	margin-left:10px;
 	}
 
+@media(max-width:425px){
+	.two{
+		margin-left: 10%;
+		}
+}	
+
+
 	
 		
