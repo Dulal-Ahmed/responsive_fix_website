@@ -740,9 +740,5 @@ footer{
 	margin-left:10px;
 	}
 
-	@media screen and (max-width: 450px) {
-		#portfoliologo-2 {
-		 margin-top:300px;
-		}
-	  }
+	
 		
