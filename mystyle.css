@@ -333,7 +333,7 @@ h1 {font-weight:regular;
 .portfoliobanner
 {
     display: flex;
-    margin-top:50px;
+    margin-top:30px;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
